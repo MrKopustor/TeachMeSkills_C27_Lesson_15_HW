@@ -31,6 +31,8 @@ public class ReceptionInputData {
         for (int s : number) {
             if (s % 2 == 0) {
                 System.out.println(s);
+            } else {
+                System.out.println("No even numbers");
             }
         }
 
