@@ -13,11 +13,13 @@ public class Converter {
         System.out.println("String -> " + string);
 
         try {
-
             i = Integer.parseInt(string);
         } catch (NumberFormatException e) {
-            //todo logging
+            //todo logging Error
             System.out.println("[ERROR] -> Invalid String");
+        } catch (Exception e) {
+            //todo logging Error
+            System.out.println("[ERROR] -> Undefined Error");
         }
         return i;
     }

@@ -32,7 +32,7 @@ public class ReceptionInputData {
             if (s % 2 == 0) {
                 System.out.println(s);
             } else {
-                System.out.println("No even numbers");
+                //todo Logging "No even numbers"
             }
         }
 

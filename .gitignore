@@ -27,5 +27,11 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/TeachMeSkills_C27_Lesson_15_HW.iml
+/.idea/
 /TeachMeSkills_C27_Lesson_15_HW.iml
 /.idea/
