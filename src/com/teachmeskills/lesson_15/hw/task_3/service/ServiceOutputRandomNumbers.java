@@ -2,18 +2,24 @@ package com.teachmeskills.lesson_15.hw.task_3.service;
 
 import java.util.ArrayList;
 
-import static com.teachmeskills.lesson_15.hw.task_3.util.ReceptionInputData.receptionInputData;
-
 public class ServiceOutputRandomNumbers {
-    public static void serviceOutputRandomNumbers() {
-        ArrayList<Integer> randomNumber = new ArrayList(receptionInputData());
+    public static void serviceOutputRandomNumbers(int size) {
+        int arithmeticMean;
+        int count = 0;
 
-        for (int j = 0; j < receptionInputData(); j++) {
+        ArrayList<Integer> randomNumber = new ArrayList(size);
+
+        for (int j = 0; j < size; j++) {
             randomNumber.add((int) (Math.random() * 1000));
         }
 
         for (Integer r : randomNumber) {
-            System.out.println(r);
+            count += r;
+        }
+
+        if(count != 0){
+            arithmeticMean = count / size;
+            System.out.println("Arithmetic mean of all elements collection -> " + arithmeticMean);
         }
     }
 }
